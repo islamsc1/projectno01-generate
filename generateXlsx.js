@@ -15,7 +15,7 @@ function generateXlsxFromJson(jsonFilePath, xlsxFilePath) {
   }));
 
   // Convert the modified data to a worksheet
-  const worksheet = xlsx.utils.json_to_sheet(modifiedData.split(100, 200));
+  const worksheet = xlsx.utils.json_to_sheet(modifiedData);
 
   // Create a new workbook and append the worksheet
   const workbook = xlsx.utils.book_new();
